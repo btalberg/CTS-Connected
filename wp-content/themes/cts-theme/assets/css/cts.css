@@ -1,0 +1,36 @@
+/*
+
+CTS styling
+
+Created: Ben Talberg
+Created On: 3/18/2013
+
+Modifications:
+3/18/13 - BT - Created file, added instructions for sub-menus
+
+*/
+
+/* Menus */
+.base-menu {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.top-wrap .base-menu.sub-menu {
+	height: 36px;
+}
+.sub-menu ul, .sub-menu li {
+	height: 26px;
+	font-size: 17px;
+	padding-top: 3px;
+	font-family: 'eng_gothicnormal';
+	text-align: center;
+	display: block;
+}
+.menu-item {
+	position: absolute;
+	width: 130px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #fff;
+	left: 0px;
+}

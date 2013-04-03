@@ -1,0 +1,23 @@
+/*
+
+Simple CSS to cleanup some problematic instructions in our CBOX parent theme.
+
+Created: Ben Talberg
+Created On: 3/18/2013
+
+Modifications:
+3/18/13 - BT - Created file, added instruction to override background-image on sub-menus
+
+*/
+
+.top-wrap .sub-menu {
+	background-image: none;
+}
+.base-menu ul li.current-menu-item a {
+	background: none;
+}
+.base-menu ul a {
+	float: none;
+	display: block;
+	padding: 0px;
+}
