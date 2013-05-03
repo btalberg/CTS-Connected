@@ -14,19 +14,12 @@
 ?>
 <div id="content" role="main" class="column sixteen">
 	<div id="top-homepage" class="row">
-		<div id="flex-slider-wrap-full" class="column eleven">
+		<div id="flex-slider-wrap-full" class="column sixteen">
 			<!-- load template for the slider-->
 			<?php
-				infinity_load_template( 'engine/includes/feature-slider/template.php' );
+				infinity_load_template( 'templates/cts-slider-template.php' );
 			?>
 			<!-- end -->
-		</div>	
-		<div id="homepage-sidebar-right" class="column five">
-			<div id="homepage-sidebar">
-		        <?php
-		            dynamic_sidebar( 'Homepage Top Right' );
-		        ?>
-			</div>
 		</div>
 	</div>
     <?php
@@ -39,24 +32,37 @@
 		?>
 	</div>      
 	<div class="homepage-widgets row">
-	    <div id="homepage-widget-left" class="column five homepage-widget">         
+	    <div id="homepage-widget-left" class="column six">         
 	            <?php
-	                dynamic_sidebar( 'Homepage Left' );
+	                dynamic_sidebar( 'Homepage Middle Left' );
 	            ?>
 	    </div>
 	             
-	    <div id="homepage-widget-middle" class="column five homepage-widget">  
+	    <div id="homepage-widget-middle" class="column five">  
 	            <?php
-	                dynamic_sidebar( 'Homepage Middle' );
+	                dynamic_sidebar( 'Homepage Middle Center' );
 	            ?>
 	    </div>
 	     
-	    <div id="homepage-widget-right" class="column six homepage-widget">   
+	    <div id="homepage-widget-right" class="column five">   
 	            <?php
-	            	dynamic_sidebar( 'Homepage Right' );
+	            	dynamic_sidebar( 'Homepage Middle Right' );
 	            ?>
 	    </div>  
-	</div>      
+	</div>
+	<div class="homepage-widgets row">
+	    <div id="homepage-widget-left" class="column eight">         
+	            <?php
+	                dynamic_sidebar( 'Homepage Bottom Left' );
+	            ?>
+	    </div>
+	    
+	    <div id="homepage-widget-right" class="column eight">   
+	            <?php
+	            	dynamic_sidebar( 'Homepage Bottom Right' );
+	            ?>
+	    </div>  
+	</div>    
     <?php
         do_action( 'close_home' );
         do_action( 'close_content' );
