@@ -38,7 +38,12 @@
 					<div class="post-content">
 						<?php 
 							do_action( 'open_loop_post_content' );
-							the_content();
+							$content = get_the_content();
+							if (strlen($content) <= 500) {
+								echo $content;
+							} else {
+								echo (substr($content, 0, 500) . "...");
+							}
 							do_action( 'close_loop_post_content' );
 						?>
 					</div>

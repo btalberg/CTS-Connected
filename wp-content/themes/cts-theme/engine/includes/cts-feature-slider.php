@@ -11,7 +11,6 @@ add_action( 'save_post', 'save_custom_url' );
  * Add meta box
  */
 function add_features_url_metabox() {
-	_log("In add_features_url_metabox");
 	add_meta_box( 'custom-metabox', __( 'URL &amp; Description' ), 'url_custom_metabox', 'features', 'normal', 'high' );
 }
 
@@ -19,7 +18,7 @@ function add_features_url_metabox() {
  * Display the metabox
  */
 function url_custom_metabox() {
-	_log("In url_custom_metabox");
+	
 	global $post;
 	$urllink = get_post_meta( $post->ID, 'urllink', true );
 	$urldesc = get_post_meta( $post->ID, 'urldesc', true );
