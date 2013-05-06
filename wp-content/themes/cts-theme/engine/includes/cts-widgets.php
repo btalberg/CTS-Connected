@@ -300,7 +300,7 @@ class CTS_Widget_Groups extends WP_Widget {
 }
 
 function cts_groups_ajax_widget_groups_list() {
-	_log("test");
+	
 	check_ajax_referer('cts_groups_widget_groups_list');
 
 	switch ( $_POST['filter'] ) {

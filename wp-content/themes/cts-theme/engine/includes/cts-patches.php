@@ -6,6 +6,7 @@ Description: 	This will fix various bugs I've run into along the way.
 Version: 		0.1
 */
 
+// Removes scripts that prevent the Events calendar from displaying
 function dequeue_cmb_scripts( $hook ) {
 	global $post;
 	

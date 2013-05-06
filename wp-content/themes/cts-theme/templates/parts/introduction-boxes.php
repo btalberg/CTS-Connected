@@ -19,7 +19,7 @@
 			<header>
 			<h1 id= "category-title" class="page-title">
 				<?php
-					printf( __( 'Category: <span>%s</span>', infinity_text_domain ), single_cat_title( '', false ) );
+					printf( __( '<span>%s</span>', infinity_text_domain ), single_cat_title( '', false ) );
 				?>
 			</h1>
 			</header>

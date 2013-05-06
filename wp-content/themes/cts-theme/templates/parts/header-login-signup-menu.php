@@ -49,6 +49,6 @@
       </ul>
 	  </li>
 	<?php else : ?>
-	  <li class="menu-item user-settings right"><a href=""><span><?php echo( " " . $current_user->user_login ) ?></span></a>
+	  <li class="menu-item user-settings right"><a href="<?php echo( " " . bp_loggedin_user_domain( '/' ) ) ?>"><span><?php echo( " " . $current_user->user_login ) ?></span></a>
 	<?php endif; ?>
 </ul>

@@ -26,6 +26,7 @@
 <div class="profile" role="main">
 
 	<?php
+		_log("In profile.php");
 		// Profile Edit
 		if ( bp_is_current_action( 'edit' ) )
 			locate_template( array( 'members/single/profile/edit.php' ), true );

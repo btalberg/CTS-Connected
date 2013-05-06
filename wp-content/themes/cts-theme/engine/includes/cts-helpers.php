@@ -32,4 +32,18 @@ function convert_list_column_number_to_string($column_number) {
 	}
 }
 
-?>
+function wrap_group_header_start() { ?>
+	<!-- html -->
+	<div id="group-header-container" class="container white">
+	<!-- end -->
+<?php }
+
+add_action('bp_before_group_header','wrap_group_header_start');
+
+function wrap_group_header_end() { ?>
+	<!-- html -->
+	</div>
+	<!-- end -->
+<?php }
+
+add_action('bp_after_group_header','wrap_group_header_end');
