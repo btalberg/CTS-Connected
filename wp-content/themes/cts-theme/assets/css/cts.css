@@ -330,6 +330,11 @@ ul#activity-stream li.activity-item,
 	margin: 0px 0px 10px 10px;
 	text-shadow: none;
 	border: 1px solid #545353;
+	opacity:0.5;
+}
+
+.flex-container:hover .flex-caption {
+	opacity:1.0;
 }
 
 .flex-caption p, .flex-caption h3 {
