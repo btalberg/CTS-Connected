@@ -248,7 +248,6 @@ ul.first.acfb-holder li {
 	margin-right: 0;
 	position: relative;
 	top: -1px;
-	height: 35px;
 	line-height: 30px;
 }
 
@@ -262,6 +261,7 @@ ul.first.acfb-holder li {
 
 #login-menu {
 	float: right;
+	height: 35px;
 }
 
 #menu-cbox-sub-menu {
