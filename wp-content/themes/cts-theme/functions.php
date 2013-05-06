@@ -8,7 +8,7 @@
 /**
  * Turn on developer mode
  */
-define( 'INFINITY_DEV_MODE', true );
+//define( 'INFINITY_DEV_MODE', true );
 
 ?>
 <?php
