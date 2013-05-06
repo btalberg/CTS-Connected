@@ -8,7 +8,7 @@
 /**
  * Turn on developer mode
  */
-//define( 'INFINITY_DEV_MODE', true );
+define( 'INFINITY_DEV_MODE', true );
 
 ?>
 <?php
@@ -62,4 +62,8 @@ require_once( 'engine/includes/cts-widgets.php');
  */
 require_once( 'engine/includes/cts-patches.php');
 
+/**
+ * CTS Feature Slider
+ */
+require_once( 'engine/includes/cts-feature-slider.php');
 ?>

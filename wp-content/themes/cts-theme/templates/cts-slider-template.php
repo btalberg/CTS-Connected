@@ -33,12 +33,14 @@ if ( infinity_option_get( 'cbox_flex_slider' ) == 1 ):
 			$wp_query->the_post();
 			$captions[] = ''.get_the_excerpt().'';
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');
+			$urllink = get_post_meta( $post->ID, 'urllink', true );
+			$urldesc = get_post_meta( $post->ID, 'urldesc', true );
 		?>		
 			<!-- Loop through slides  -->
 			<!-- Image -->
 			<?php if(has_post_thumbnail()) :?>
 			<li>
-					<a href="<?php the_permalink(); ?>">
+					<a href="<?php echo $urllink; ?>" data-original-title="<?php echo $urldesc; ?>">
 						<img src="<?php echo $image[0]; ?>" class="attachment-nivothumb wp-post-image" title="<?php the_title_attribute(); ?>" alt="<?php 			the_title_attribute(); ?>" />	
 					</a>
 					<!-- Caption -->	
