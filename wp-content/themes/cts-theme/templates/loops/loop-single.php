@@ -20,18 +20,25 @@
 ?>
 			<!-- the post -->
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<div id="post-container">
+				<div id="post-container" class="container white">
 				
-					<?php infinity_get_template_part( 'templates/parts/post-meta-top');	?>
+					<?php 
+						if(get_post_type() == 'event')
+							infinity_get_template_part( 'templates/parts/event-meta-top');
+						else
+							infinity_get_template_part( 'templates/parts/post-meta-top');
+					?>
 		
 					<?php infinity_get_template_part( 'templates/parts/post-header'); ?>	
 
 					<?php
 					do_action( 'open_loop_single' );
 					?>			
-
-					<?php infinity_get_template_part( 'templates/parts/post-banner-image');	?>				
-			
+					
+					<div class="no-margin">
+						<?php infinity_get_template_part( 'templates/parts/post-banner-image');	?>				
+					</div>
+					
 					<?php
 						do_action( 'before_single_entry' )
 					?>

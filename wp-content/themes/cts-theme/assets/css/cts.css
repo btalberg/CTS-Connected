@@ -225,6 +225,7 @@ ul.first.acfb-holder li {
 	margin-bottom: 10px !important;
 }
 
+.event #post-container .post-link,
 .post #post-container .post-link {
 	visibility: hidden;
 	width: 0;
@@ -487,6 +488,7 @@ ul #event-meta span.activity {
 
 #post-container .post-content {
 	margin-left: 10px;
+	margin-right: 10px;
 	margin-bottom: 35px;
 }
 
