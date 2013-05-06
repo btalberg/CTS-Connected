@@ -157,7 +157,7 @@ ul.item-list li {
 
 .widget_cts_activity_feed h4,
 .blue-header,
-div#subnav.no-ajax.item-list-tabs.blue-header {
+#item-body div#subnav.item-list-tabs {
 	background-image: none;
 	background-color: #063757;
 	margin: 0;
@@ -205,13 +205,18 @@ ul.first.acfb-holder li {
 }
 
 /* Activity Stream */
-#activity-stream.activity-list.item-list {
+ul#activity-stream.activity-list.item-list {
 	margin: 0;
 }
 
-#activity-stream li.activity-item.mini {
-	padding: 5px 0 0 5px;
-	margin: 0;
+ul#activity-stream li {
+	border-bottom: none;
+}
+
+ul#activity-stream li.activity-item,
+#whats-new-form {
+	padding: 5px 0 0 5px !important;
+	margin: 0 !important;
 }
 
 #item-body ul li label {
