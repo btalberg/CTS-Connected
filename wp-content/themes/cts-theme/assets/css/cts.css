@@ -448,6 +448,10 @@ ul #event-meta span.activity {
 	margin: 0;
 }
 
+#post-container div:empty {
+	margin-top: 10px;
+}
+
 #post-container .post-top .post-date {
 	color: #79ACB5;
 	float: left;
